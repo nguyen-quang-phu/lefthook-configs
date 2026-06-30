@@ -1,3 +1,3 @@
 extends:
-  - lefthook-lumin-frontend-install-deps.yml
-  - lefthook-lumin-frontend-linear.yml
+  - ../lefthook-lumin-frontend-install-deps.yml
+  - ../lefthook-lumin-frontend-linear.yml
