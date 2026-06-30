@@ -2,15 +2,6 @@ post-merge:
   parallel: true
   files: "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD"
   jobs:
-    - name: install-deps
-      glob: "{pnpm-lock.yaml,package.json}"
-      run: bash scripts/git-hooks/run-with-repo-node.sh just install
-      only:
-        - ref: develop-opt
-        - ref: staging
-      skip:
-        - rebase
-
     - name: linear-move-cards
       run: |
         git rev-parse --verify --quiet ORIG_HEAD >/dev/null 2>&1 || exit 0

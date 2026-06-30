@@ -5,8 +5,3 @@ prepare-commit-msg:
       run: node scripts/prepare-commit-msg.js {1}
       env:
         LEFTHOOK: 0
-
-post-commit:
-  commands:
-    auto_push:
-      run: git push origin HEAD

@@ -1,0 +1,4 @@
+post-commit:
+  commands:
+    auto_push:
+      run: git push origin HEAD

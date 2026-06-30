@@ -1,0 +1,3 @@
+extends:
+  - lefthook-auto-push-commitzen.yml
+  - lefthook-auto-push-post-commit.yml
